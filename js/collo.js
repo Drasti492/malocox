@@ -70,41 +70,37 @@ whiteModeBtn.addEventListener("click", function() {
 });
 
 // Contact Form Submission
-const form = document.getElementById("contact-form");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
+// ---------- CONTACT FORM (Formspree) ----------
+const contactForm = document.getElementById('contact-form');
+const statusEl    = document.getElementById('form-status');
 
-for (let i = 0; i < formInputs.length; i++) {
-    formInputs[i].addEventListener("input", function() {
-        if (form.checkValidity()) {
-            formBtn.removeAttribute("disabled");
-        } else {
-            formBtn.setAttribute("disabled", "");
-        }
+contactForm.addEventListener('submit', async function (e) {
+  // Let Formspree handle the POST, we only show feedback
+  const btn = contactForm.querySelector('.form-btn');
+  btn.disabled = true;
+  btn.innerHTML = '<ion-icon name="hourglass-outline"></ion-icon><span>Sending…</span>';
+
+  try {
+    const res = await fetch(contactForm.action, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { 'Accept': 'application/json' }
     });
-}
 
-form.addEventListener("submit", async function(e) {
-    e.preventDefault();
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData);
-
-    try {
-        const response = await fetch("/api/contact", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data)
-        });
-        if (response.ok) {
-            alert("Message sent successfully!");
-            form.reset();
-            formBtn.setAttribute("disabled", "");
-        } else {
-            alert("Failed to send message.");
-        }
-    } catch (error) {
-        alert("Error sending message.");
+    if (res.ok) {
+      statusEl.textContent = ' Message sent – check your Gmail!';
+      statusEl.style.color = 'var(--green)';
+      contactForm.reset();
+    } else {
+      throw new Error();
     }
+  } catch (err) {
+    statusEl.textContent = ' Something went wrong. Try again or email me directly.';
+    statusEl.style.color = 'var(--red)';
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '<ion-icon name="paper-plane"></ion-icon><span>Send Message</span>';
+  }
 });
 
 // Page Navigation

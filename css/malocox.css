@@ -378,3 +378,14 @@ textarea.form-input::-webkit-resizer { display: none; }
     .separator:last-of-type { margin: 15px 0; opacity: 0; }
     .social-list { justify-content: center; }
 }
+
+.skill-level {
+  color: var(--light-gray70);
+  font-size: var(--fs8);
+  font-weight: var(--fw300);
+  margin-left: auto;
+}
+
+.skills-progress-fill {
+  width: 100%;
+}

@@ -1,338 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malocox_Digital - Portfolio</title>
-    <link rel="stylesheet" href="./css/malocox.css">
-    <link rel="shortcut icon" href="./images/malocox logo.jpg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malocox Digital — Portfolio</title>
+  <link rel="stylesheet" href="./css/malocox.css">
+  <link rel="shortcut icon" href="./images/malocox logo.jpg" type="image/x-icon">
 </head>
+
 <body>
-    <main>
-        <aside class="sidebar" data-sidebar>
-            <div class="sidebar-info">
-                <figure class="avatar-box">
-                    <img src="./images/malocox2.jpeg" alt="MalocoxDigital" width="80">
-                </figure>
-                <div class="info-content">
-                    <h1 class="name" title="B3tt">Malocox_Digital</h1>
-                    <p class="title">Web Developer & Creative</p>
-                </div>
-                <button class="info-more-btn" data-sidebar-btn>
-                    <span>Show Contacts</span>
-                    <ion-icon name="chevron-down"></ion-icon>
-                </button>
-            </div>
-            <div class="sidebar-info-more">
-                <div class="separator"></div>
-                <ul class="contacts-list">
-                    <li class="contact-item">
-                        <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p>
-                            <a href="mailto:malocoxdigital@gmail.com" class="contact-link">malocoxdigital@gmail.com</a>
-                        </div>
-                    </li>
-                    <li class="contact-item">
-                        <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
-                        <div class="contact-info">
-                            <p class="contact-title">WhatsApp</p>
-                            <a href="https://wa.me/+254745103004" class="contact-link">+254 745103004</a>
-                        </div>
-                    </li>
-                    <li class="contact-item">
-                        <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
-                        <div class="contact-info">
-                            <p class="contact-title">Birthday</p>
-                            <time datetime="1995-01-01">Adult</time>
-                        </div>
-                    </li>
-                    <li class="contact-item">
-                        <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
-                        <div class="contact-info">
-                            <p class="contact-title">Location</p>
-                            <address>Nairobi, Kenya</address>
-                        </div>
-                    </li>
-                </ul>
-                <div class="separator"></div>
-                <ul class="social-list">
-                    <li class="social-item"><a href="https://x.com/UncleTiliman?t=VyuSwC8nk9xiPBzn7QKq7g&s=09" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li class="social-item"><a href="https://www.instagram.com/malocox_digital?igsh=Y3hkZWd1MHRreXgy" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li class="social-item"><a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEwlWmuagI7dgAAAZqHfE4wFKg6zOjWfLUiv5OBGy43bZIj8gqxuzvue3wakzSleLMxmQvrTF6x8GsFDmKtjOawAVWoxnY8fO4WAWnO5s_lNayCOTQf0Cvecl8su-xrMMRuw6I=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmalocox-digital-237a81369%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                    <li class="social-item"><a href="https://youtube.com/@ai-meowmentss?si=Hmgfa5DTQC-wm3ok" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
-                    <li class="social-item"><a href="https://wa.me/+254796485418" class="social-link"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-                    <li class="social-item"><a href="#" class="social-link" id="chatbot-toggle"><ion-icon name="chatbubbles-outline"></ion-icon></a></li>
-                </ul>
-                <!-- Chatbot -->
-                <div id="chatbot" class="chatbot hidden">
-                    <div class="chatbot-header">
-                        <h3>Chat with Malocox</h3>
-                        <ion-icon name="close-outline" id="chatbot-close"></ion-icon>
-                    </div>
-                    <div class="chatbot-body">
-                        <p>Hello! Ask me about my skills or projects.</p>
-                    </div>
-                    <input type="text" placeholder="Type a message..." id="chatbot-input">
-                </div>
-            </div>
-        </aside>
-        <div class="main-content">
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
-                    <li class="navbar-item">
-                        <button class="navbar-link mode-toggle">
-                            <ion-icon name="moon-outline" id="black-mode"></ion-icon>
-                            <ion-icon name="contrast-outline" id="grey-mode" style="display:none;"></ion-icon>
-                            <ion-icon name="sunny-outline" id="white-mode" style="display:none;"></ion-icon>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-            <article class="about active" data-page="about">
-                <header><h2 class="h2 article-title">About Me</h2></header>
-                <section class="about-text">
-                    <p>I’m Malocox_Digital, a Kenyan web developer, educator, and creative professional skilled in crafting user-friendly websites and engaging content.</p>
-                    <p>My expertise spans coding, videography, and Graphic and Website Designer, with a passion for solving problems through innovative design and technology. I’m open to diverse opportunities!</p>
-                </section>
-<section class="service">
-  <h3 class="h3 service-title">What I Do</h3>
-  <ul class="service-list">
+<main>
 
-    <li class="service-item">
-      <div class="service-icon-box">
-        <img src="./images/dev.jpg" alt="Web Development Icon" width="40">
-      </div>
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">Web Development</h4>
-        <p class="service-item-text">Building fast, responsive, modern websites that work perfectly on any device.</p>
-      </div>
-    </li>
+  <!-- SIDEBAR -->
+  <aside class="sidebar" data-sidebar>
+    <div class="sidebar-info">
+      <figure class="avatar-box">
+        <img src="./images/malocox2.jpeg" alt="Malocox Digital" width="80">
+      </figure>
 
-    <li class="service-item">
-      <div class="service-icon-box">
-        <img src="./images/videography.jpg" alt="Videography Icon" width="40">
-      </div>
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">Videography</h4>
-        <p class="service-item-text">Capturing and producing high-quality videos for YouTube, events, and brands.</p>
-      </div>
-    </li>
-
-    <li class="service-item">
-      <div class="service-icon-box">
-        <img src="./images/designer.jpg" alt="Graphic Design Icon" width="40">
-      </div>
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">Graphic Design</h4>
-        <p class="service-item-text">Creating clean, eye-catching logos, banners, social media graphics, and branding.</p>
-      </div>
-    </li>
-
-    <li class="service-item">
-      <div class="service-icon-box">
-        <img src="./images/video editing.jpg" alt="Video Editing Icon" width="40">
-      </div>
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">Video Editing</h4>
-        <p class="service-item-text">Editing sharp, engaging videos with smooth cuts, effects, and storytelling.</p>
-      </div>
-    </li>
-
-  </ul>
-</section>
-            </article>
-            <article class="resume" data-page="resume">
-                <header><h2 class="h2 article-title">Resume</h2></header>
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
-                        <h3 class="h3">Education</h3>
-                    </div>
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Degree in Bachelor of Education </h4>
-                            <span> - </span>
-                            <p class="timeline-text">Studied at a leading Kenyan university, mastering teaching methodologies and subject expertise.</p>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Web Development Courses</h4>
-                            <span> - </span>
-                            <p class="timeline-text">Honed expertise through dedicated study with leading instructors in web development and digital design.</p>
-                        </li>
-                    </ol>
-                </section>
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
-                        <h3 class="h3">Experience</h3>
-                    </div>
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Freelance Web Developer</h4>
-                            <span> - </span>
-                            <p class="timeline-text">Developed websites using JavaScript, React, and backend technologies.</p>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Videographer & Editor</h4>
-                            <span> - </span>
-                            <p class="timeline-text">Shot and edited videos for YouTube, events, and commercials using Adobe tools.</p>
-                        </li>
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title"> Designer</h4>
-                            <span> - </span>
-                            <p class="timeline-text"> I design graphics that grab attention. Simple, clean, professional no clutter.From logos to banners, landing pages to full sites, I turn ideas into pixels that work.</p>
-                        </li>
-                    </ol>
-                </section>
-                <section class="skill">
-  <h3 class="h3 skills-title">My Skills</h3>
-  <ul class="skills-list content-card">
-
-    <!-- 1. Graphic Design – 98% -->
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Graphic Design</h5>
-        <data value="98">98%</data>
-      </div>
-      <div class="skills-progress-bg">
-        <div class="skills-progress-fill" style="width: 98%;"></div>
-      </div>
-    </li>
-
-    <!-- 2. Videography – 95% -->
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Videography</h5>
-        <data value="95">95%</data>
-      </div>
-      <div class="skills-progress-bg">
-        <div class="skills-progress-fill" style="width: 95%;"></div>
-      </div>
-    </li>
-
-    <!-- 3. Video Editing – 92% -->
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Video Editing</h5>
-        <data value="92">92%</data>
-      </div>
-      <div class="skills-progress-bg">
-        <div class="skills-progress-fill" style="width: 92%;"></div>
-      </div>
-    </li>
-
-    <!-- 4. Web Development – 90% -->
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Web Development</h5>
-        <data value="90">90%</data>
-      </div>
-      <div class="skills-progress-bg">
-        <div class="skills-progress-fill" style="width: 90%;"></div>
-      </div>
-    </li>
-
-  </ul>
-</section>
-            </article>
-            <article class="portfolio" data-page="portfolio">
-                <header><h2 class="h2 article-title">Portfolio</h2></header>
-                <section class="projects">
-                    <ul class="filter-list">
-                        <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
-                        <li class="filter-item"><button data-filter-btn>Web Development</button></li>
-                        <li class="filter-item"><button data-filter-btn>Videography</button></li>
-                        <li class="filter-item"><button data-filter-btn>Graphic Designer</button></li>
-                    </ul>
-                    <div class="filter-select-box">
-                        <button class="filter-select" data-select>
-                            <div class="select-value" data-select-value>Select Category</div>
-                            <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
-                        </button>
-                        <ul class="select-list">
-                            <li class="select-item"><button data-select-item>All</button></li>
-                            <li class="select-item"><button data-select-item>Web Development</button></li>
-                            <li class="select-item"><button data-select-item>Videography</button></li>
-                            <li class="select-item"><button data-select-item>Graphic Designer</button></li>
-                        </ul>
-                    </div>
-                    <ul class="project-list">
-                        <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="https://cosmetics-coral.vercel.app/">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                                    <img src="./images/cosmeticswebsite.jpg" alt="Website Project 1" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">E-commerce Website (Unfinished Project) </h3>
-                                <p class="project-category">Web Development</p>
-                            </a>
-                        </li>
-                        <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="https://tamedstakepool.netlify.app/">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                                    <img src="./images/blockhainwebsite.jpg" alt="Website Project 1" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Block-Chain Website</h3>
-                                <p class="project-category">Web Development</p>
-                            </a>
-                        </li>
-                        <li class="project-item active" data-filter-item data-category="videography">
-                            <a href="https://www.youtube.com/@Ai-Meowmentss">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                                    <img src="./images/catyoutube.jpg" alt="Video Project 1" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Ai-Cat Channel</h3>
-                                <p class="project-category">Videography</p>
-                            </a>
-                        </li>
-                        <!-- Add more placeholders as needed -->
-                    </ul>
-                </section>
-            </article>
-           <article class="contact" data-page="contact">
-  <header><h2 class="h2 article-title">Contact</h2></header>
-
-  <section class="mapbox" data-mapbox>
-    <figure>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.816104213547!2d36.82194661475792!3d-1.2833538999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d6a8e4067b%3A0x2f8b6b8b8b8b8b8b!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1698765432109!5m2!1sen!2ske"
-              width="400" height="300" loading="lazy"></iframe>
-    </figure>
-  </section>
-
-  <section class="contact-form">
-    <h3 class="h3 form-title">Contact Form</h3>
-
-    <!-- 1. Form now posts to Formspree (free, no backend) -->
-    <form action="https://formspree.io/f/mvgdworj" method="POST" class="form" id="contact-form">
-
-      <div class="input-wrapper">
-        <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
-        <input type="email" name="email" class="form-input" placeholder="Email Address" required>
+      <div class="info-content">
+        <h1 class="name">Malocox_Digital</h1>
+        <p class="title">Web Developer & Digital Designer</p>
       </div>
 
-      <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
-
-      <button class="form-btn" type="submit">
-        <ion-icon name="paper-plane"></ion-icon>
-        <span>Send Message</span>
+      <button class="info-more-btn" data-sidebar-btn>
+        <span>Show Contacts</span>
+        <ion-icon name="chevron-down"></ion-icon>
       </button>
-    </form>
+    </div>
 
-    <!-- 2. Success / error message (optional but nice) -->
-    <p class="form-status" id="form-status"></p>
-  </section>
-</article>
+    <div class="sidebar-info-more">
+      <div class="separator"></div>
+
+      <ul class="contacts-list">
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+            <a href="mailto:malocoxdigital@gmail.com" class="contact-link">
+              malocoxdigital@gmail.com
+            </a>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="logo-whatsapp"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">WhatsApp</p>
+            <a href="https://wa.me/254745103004" class="contact-link">
+              +254 745 103 004
+            </a>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Availability</p>
+            <time>Open for collaboration</time>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Location</p>
+            <address>Nairobi, Kenya</address>
+          </div>
+        </li>
+      </ul>
+
+      <div class="separator"></div>
+
+      <ul class="social-list">
+        <li class="social-item"><a href="https://x.com/UncleTiliman" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li class="social-item"><a href="https://www.instagram.com/malocox_digital" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li class="social-item"><a href="https://www.linkedin.com/in/malocox-digital" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li class="social-item"><a href="https://youtube.com/@ai-meowmentss" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        <li class="social-item"><a href="#" id="chatbot-toggle" class="social-link"><ion-icon name="chatbubbles-outline"></ion-icon></a></li>
+      </ul>
+
+      <!-- CHATBOT -->
+      <div id="chatbot" class="chatbot hidden">
+        <div class="chatbot-header">
+          <h3>Ask Malocox</h3>
+          <ion-icon name="close-outline" id="chatbot-close"></ion-icon>
         </div>
-    </main>
-    <script src="./js/collo.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <div class="chatbot-body">
+          <p>Hello. You can ask about my work or experience.</p>
+        </div>
+        <input type="text" id="chatbot-input" placeholder="Type your message…">
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <!-- NAV -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+      </ul>
+    </nav>
+
+    <!-- ABOUT -->
+    <article class="about active" data-page="about">
+      <header><h2 class="h2 article-title">About Me</h2></header>
+
+      <section class="about-text">
+        <p>
+          I’m <strong>Malocox Digital</strong>, a Nairobi-based web developer and digital designer
+          focused on building clean, reliable, and user-friendly web experiences.
+        </p>
+        <p>
+          My work blends front-end development with strong visual and media skills,
+          allowing me to deliver solutions that are both functional and visually clear.
+          I value simplicity, maintainability, and long-term usability.
+        </p>
+      </section>
+
+      <section class="service">
+        <h3 class="h3 service-title">What I Do</h3>
+        <ul class="service-list">
+
+          <li class="service-item">
+            <div class="service-icon-box">
+              <img src="./images/dev.jpg" width="40" alt="">
+            </div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Web Development</h4>
+              <p class="service-item-text">
+                Designing and building responsive websites with clean structure and performance in mind.
+              </p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box">
+              <img src="./images/videography.jpg" width="40" alt="">
+            </div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Videography</h4>
+              <p class="service-item-text">
+                Producing and editing digital video content for online platforms and brands.
+              </p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box">
+              <img src="./images/designer.jpg" width="40" alt="">
+            </div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Graphic Design</h4>
+              <p class="service-item-text">
+                Creating visual assets that support clarity, usability, and brand consistency.
+              </p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box">
+              <img src="./images/video editing.jpg" width="40" alt="">
+            </div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Video Editing</h4>
+              <p class="service-item-text">
+                Editing structured and engaging video content with clear storytelling.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+    </article>
+
+    <!-- RESUME -->
+    <article class="resume" data-page="resume">
+      <header><h2 class="h2 article-title">Resume</h2></header>
+
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+          <h3 class="h3">Education</h3>
+        </div>
+
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Bachelor of Education</h4>
+            <p class="timeline-text">
+              Academic training focused on analytical thinking, structure, and communication.
+            </p>
+          </li>
+
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Web & Digital Design Training</h4>
+            <p class="timeline-text">
+              Continuous learning through hands-on projects and focused technical study.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+          <h3 class="h3">Experience</h3>
+        </div>
+
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Freelance Web Developer</h4>
+            <p class="timeline-text">
+              Designed and developed responsive websites with attention to structure, usability, and maintainability.
+            </p>
+          </li>
+
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Videographer & Editor</h4>
+            <p class="timeline-text">
+              Planned, recorded, and edited video content for digital platforms.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="skill">
+        <h3 class="h3 skills-title">Skills</h3>
+        <ul class="skills-list content-card">
+
+          <li class="skills-item">
+            <div class="title-wrapper"><h5 class="h5">Graphic Design</h5><data></data></div>
+            <div class="skills-progress-bg"><div class="skills-progress-fill" style="width:100%"></div></div>
+          </li>
+
+          <li class="skills-item">
+            <div class="title-wrapper"><h5 class="h5">Videography</h5><data></data></div>
+            <div class="skills-progress-bg"><div class="skills-progress-fill" style="width:100%"></div></div>
+          </li>
+
+          <li class="skills-item">
+            <div class="title-wrapper"><h5 class="h5">Video Editing</h5><data></data></div>
+            <div class="skills-progress-bg"><div class="skills-progress-fill" style="width:100%"></div></div>
+          </li>
+
+          <li class="skills-item">
+            <div class="title-wrapper"><h5 class="h5">Web Development</h5><data></data></div>
+            <div class="skills-progress-bg"><div class="skills-progress-fill" style="width:100%"></div></div>
+          </li>
+
+        </ul>
+      </section>
+    </article>
+
+    <!-- PORTFOLIO -->
+    <article class="portfolio" data-page="portfolio">
+      <header><h2 class="h2 article-title">Portfolio</h2></header>
+
+      <ul class="project-list">
+
+        <li class="project-item active">
+          <a href="https://cosmetics-coral.vercel.app/">
+            <figure class="project-img">
+              <img src="./images/cosmeticswebsite.jpg" loading="lazy">
+            </figure>
+            <h3 class="project-title">E-commerce Website (Work in Progress)</h3>
+            <p class="project-category">Web Development</p>
+          </a>
+        </li>
+
+        <li class="project-item active">
+          <a href="https://tamedstakepool.netlify.app/">
+            <figure class="project-img">
+              <img src="./images/blockhainwebsite.jpg" loading="lazy">
+            </figure>
+            <h3 class="project-title">Educational Blockchain Website</h3>
+            <p class="project-category">Web Development</p>
+          </a>
+        </li>
+
+        <li class="project-item active">
+          <a href="https://www.youtube.com/@Ai-Meowmentss">
+            <figure class="project-img">
+              <img src="./images/catyoutube.jpg" loading="lazy">
+            </figure>
+            <h3 class="project-title">Creative Video Content Channel</h3>
+            <p class="project-category">Videography</p>
+          </a>
+        </li>
+
+      </ul>
+    </article>
+
+    <!-- CONTACT -->
+    <article class="contact" data-page="contact">
+      <header><h2 class="h2 article-title">Contact</h2></header>
+
+      <section class="contact-form">
+        <form action="https://formspree.io/f/mvgdworj" method="POST" class="form" id="contact-form">
+          <input class="form-input" name="fullname" placeholder="Full Name" required>
+          <input class="form-input" name="email" placeholder="Email Address" required>
+          <textarea class="form-input" name="message" placeholder="Message" required></textarea>
+          <button class="form-btn" type="submit">
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>Send Message</span>
+          </button>
+        </form>
+        <p id="form-status"></p>
+      </section>
+    </article>
+
+  </div>
+</main>
+
+<script src="./js/collo.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
